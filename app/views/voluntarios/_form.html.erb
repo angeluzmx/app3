@@ -1,0 +1,81 @@
+ <div class="container">
+ <div class="row">
+ <div class="col-md-12">
+<%= bootstrap_form_for(@voluntario, layout: :horizontal) do |f| %>
+  <% if @voluntario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@voluntario.errors.count, "error") %> prohibited this voluntario from being saved:</h2>
+ 
+      <ul>
+      <% @voluntario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <% contacto = {
+      'Promotores voluntarios' => 'Promotores voluntarios', 'Promotores capacitantes' => 'Promotores capacitantes'} %>
+
+
+      
+    
+   
+    <%= f.select :contacto, contacto, label: "Tipo de contacto", control_col: "col-sm-2" %>
+  
+   
+    
+    <%= f.date_select :fecha_solicitud, label: "Fecha de solicitud", control_col: "col-sm-2" %>
+
+    <%= f.date_select :fecha_autorizacion, label: "Fecha de autorización", control_col: "col-sm-2" %>
+   
+    <%= f.number_field :numero_registro, label: "Número de registro", control_col: "col-sm-2" %>
+ 
+  
+    <%= f.text_field :nombre, label: "Nombre", placeholder: "Nombre", control_col: "col-sm-2" %>
+    
+
+    <%= f.text_field :apellido, label: "Apellido", placeholder: "Apellido", control_col: "col-sm-2" %>
+    
+    <%= f.text_field :estado, label: "Estado", placeholder: "Estado", control_col: "col-sm-2" %>
+   
+    <%= f.text_field :municipio, label: "Municipio", placeholder: "Municipio", control_col: "col-sm-2" %>
+   
+    <%= f.text_field :localidad, label: "Localidad", placeholder: "Localidad", control_col: "col-sm-2" %>
+    
+    <%= f.text_field :colonia, label: "Colonia", placeholder: "Colonia", control_col: "col-sm-2" %>
+    
+    <%= f.text_field :correo_electronico, label: "Email", placeholder: "Email", control_col: "col-sm-2" %>
+    
+    <%= f.number_field :telefono, label: "Teléfono", placeholder: "Teléfono", control_col: "col-sm-2" %>
+    
+    <% sub_grupos ={
+      
+ 'Acción 1' => ['Cemento'], 'Acción 2' =>  [['Mortero']], 'Acción 3' =>  [['Láminas']], 'Acción 4' =>  [['Pintura']], 'Acción 5' =>  ['Tinaco', 'Cisternas', 'Biodigestores', 'Registro de lodos', 'Bebederos', 'Filtros', 'Silos', 'Tolvas', 'Bombas/Hidroneumáticos'], 'Acción 6' =>  [['Aspersoras']], 'Acción 7' =>  [['Calentadores solares']], 'Acción 8' =>  [['Baños Ecológicos']], 'Acción 9' =>  [['Huertos de Traspatio']], 'Acción 10' =>  [['Mejoramiento de vivienda']], 'Acción 11' =>  [['Mejoramiento de pintura en casa habitación']], 'Acción 12' =>  [['Mejoramiento de escuelas']], 'Acción 13' =>  [['Calzado escolar']]} %>    
+
+    <%= f.select :sub_grupos, sub_grupos, label: "Tipo de contacto", control_col: "col-sm-2" %>
+    
+    <%= f.text_field :obra_publica, label: "Obra pública", placeholder: "Obra pública", control_col: "col-sm-2" %>
+   
+  
+  <% status = {
+      'Activo' => 'Activo', 'Inactivo' => 'Inactivo'} %>
+
+    <%= f.select :status,status, label: "Status",  control_col: "col-sm-2"%>
+  
+  
+    
+  
+    <%= f.file_field :attachment, label: "Adjuntar archivo", control_col: "col-sm-2" %>
+ 
+    <%= f.text_area :comentarios, row: 20,  class: "form-control", label: "Comentarios", placeholder: "Comentarios", control_col: "col-sm-8" %>
+  
+  <%= f.form_group do %>
+    <%= f.submit class: 'btn btn-primary btn-lg' %>
+ 
+<% end %>
+
+<% end %>
+</div>
+</div>
+</div>

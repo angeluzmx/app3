@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ 
+ *= require jquery-ui
+
+ */
+ body{
+
+ }
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.nbbackground{
+  background: #252831;
+}
+.table td {
+   text-align: center;   
+}
+.table th{
+  text-align: center;
+}
+.main_menu{
+    background: #252831;
+}
+
+select.date-select {
+  
+     width: 32.3%;
+    
+    display: inline-block;
+}
+
+
+.custab{
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0px;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+    }
+.custab:hover{
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+    }
+.custab thead{
+    background: #337ab7;
+
+}
+.custab thead a{
+    color: #fff;
+}
+.btn_agregar{
+  margin-top: 20px;
+}

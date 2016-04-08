@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @register.numero %>
+</p>
+
+<p>
+  <strong>Nombregrupo:</strong>
+  <%= @register.nombregrupo %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @register.estado %>
+</p>
+
+<p>
+  <strong>Municipio:</strong>
+  <%= @register.municipio %>
+</p>
+
+<p>
+  <strong>Localidad:</strong>
+  <%= @register.localidad %>
+</p>
+
+<p>
+  <strong>Colonia:</strong>
+  <%= @register.colonia %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @register.status %>
+</p>
+
+<%= link_to 'Edit', edit_register_path(@register) %> |
+<%= link_to 'Back', registers_path %>

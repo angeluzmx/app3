@@ -1,0 +1,1 @@
+(function(){jQuery(function(){}),$("#vonluntario_estado").autocomplete}).call(this);

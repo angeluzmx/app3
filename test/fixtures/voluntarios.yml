@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha_solicitud: 2016-03-17
+  fecha_autorizacion: 2016-03-17
+  numero_registro: 1
+  nombre: MyString
+  apellido: MyString
+  estado: MyString
+  municipio: MyString
+  localidad: MyString
+  colonia: MyString
+  correo_electronico: MyString
+  telefono: 1
+  sub_grupos: MyString
+  obra_publica: MyString
+  status: MyString
+
+two:
+  fecha_solicitud: 2016-03-17
+  fecha_autorizacion: 2016-03-17
+  numero_registro: 1
+  nombre: MyString
+  apellido: MyString
+  estado: MyString
+  municipio: MyString
+  localidad: MyString
+  colonia: MyString
+  correo_electronico: MyString
+  telefono: 1
+  sub_grupos: MyString
+  obra_publica: MyString
+  status: MyString

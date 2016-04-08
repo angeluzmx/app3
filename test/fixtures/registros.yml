@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: 1
+  nombregrupo: MyString
+  estado: MyString
+  municipio: MyString
+  localidad: MyString
+  colonia: MyString
+  disponible: false
+
+two:
+  numero: 1
+  nombregrupo: MyString
+  estado: MyString
+  municipio: MyString
+  localidad: MyString
+  colonia: MyString
+  disponible: false

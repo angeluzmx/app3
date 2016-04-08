@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Registros</h1>
+
+<%= search_form_for @search do |f| %>
+  <div class="field">
+    <%= f.label :nombre, "Name contains" %>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="actions"><%= f.submit "Search" %></div>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numero</th>
+      <th>Nombregrupo</th>
+      <th>Estado</th>
+      <th>Municipio</th>
+      <th>Localidad</th>
+      <th>Colonia</th>
+      <th>Disponible</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registros.each do |registro| %>
+      <tr>
+        <td><%= registro.numero %></td>
+        <td><%= registro.nombregrupo %></td>
+        <td><%= registro.estado %></td>
+        <td><%= registro.municipio %></td>
+        <td><%= registro.localidad %></td>
+        <td><%= registro.colonia %></td>
+        <td><%= registro.disponible %></td>
+        <td><%= link_to 'Show', registro %></td>
+        <td><%= link_to 'Edit', edit_registro_path(registro) %></td>
+        <td><%= link_to 'Destroy', registro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registro', new_registro_path %>

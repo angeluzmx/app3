@@ -1,0 +1,1 @@
+!function(n){n(document).ready(function(){n("#cssmenu").prepend('<div id="menu-button">Menu</div>'),n("#cssmenu #menu-button").on("click",function(){var e=n(this).next("ul");e.hasClass("open")?e.removeClass("open"):e.addClass("open")})})}(jQuery);

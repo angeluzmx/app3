@@ -1,0 +1,113 @@
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<blockquote>
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Contacto:</strong>
+  <%= @voluntario.contacto %>
+</p>
+</blockquote>
+<p><blockquote>
+  <strong>Nombre:</strong>
+  <%= @voluntario.nombre %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Apellido:</strong>
+  <%= @voluntario.apellido %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Fecha solicitud:</strong>
+  <%= @voluntario.fecha_solicitud %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Fecha autorizacion:</strong>
+  <%= @voluntario.fecha_autorizacion %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Numero registro:</strong>
+  <%= @voluntario.numero_registro %>
+</p>
+</blockquote>
+<blockquote>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @voluntario.estado %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Municipio:</strong>
+  <%= @voluntario.municipio %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Localidad:</strong>
+  <%= @voluntario.localidad %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Colonia:</strong>
+  <%= @voluntario.colonia %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Correo electronico:</strong>
+  <%= @voluntario.correo_electronico %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Telefono:</strong>
+  <%= @voluntario.telefono %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Sub grupos:</strong>
+  <%= @voluntario.sub_grupos %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Obra publica:</strong>
+  <%= @voluntario.obra_publica %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Status:</strong>
+  <%= @voluntario.status %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Attachment:</strong>
+  <%= @voluntario.attachment %>
+</p>
+</blockquote>
+<blockquote>
+<p>
+  <strong>Comentarios:</strong>
+  <%= @voluntario.comentarios %>
+</p>
+</blockquote>
+
+
+<%= link_to 'Edit', edit_voluntario_path(@voluntario), class: 'btn btn-primary' %> 
+<%= link_to 'Back', voluntarios_path, class: 'btn btn-primary'%>
+</div>
+</div>
+</div>

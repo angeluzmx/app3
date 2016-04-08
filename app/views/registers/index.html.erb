@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Registers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numero</th>
+      <th>Nombregrupo</th>
+      <th>Estado</th>
+      <th>Municipio</th>
+      <th>Localidad</th>
+      <th>Colonia</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registers.each do |register| %>
+      <tr>
+        <td><%= register.numero %></td>
+        <td><%= register.nombregrupo %></td>
+        <td><%= register.estado %></td>
+        <td><%= register.municipio %></td>
+        <td><%= register.localidad %></td>
+        <td><%= register.colonia %></td>
+        <td><%= register.status %></td>
+        <td><%= link_to 'Show', register %></td>
+        <td><%= link_to 'Edit', edit_register_path(register) %></td>
+        <td><%= link_to 'Destroy', register, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Register', new_register_path %>
